@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+/***********************/
+/* STYLE THE CONTAINER */
+/***********************/
+#container {
+    width: 670px;
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid black;
+    background-image: url(../imgs/bg.jpg);
+    background-size: cover; 
+}
+
+
+#paddleCanvas {
+    position: absolute;
+    z-index: 1;
+}
+
+#bricksCanvas {
+    position: absolute;
+    z-index: 3;
+}
+#ballCanvas {
+    position: absolute;
+    z-index: 2;
+}
+
+#gameOver {
+    position: absolute;
+    height: 500px;
+    width:400px;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+   left: 140px;
+   top: 20px;
+    
+
+}
+#youWon {
+    position: absolute;
+    width: 100px;
+    top: 200px;
+    left: 150px;
+    display: none;
+
+}
+#youLose {
+    position: absolute;
+    width: 400px;
+    top:100px ;
+    left: 0;
+    display: none;
+
+}
+
+#sound {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 450;
+    left: 30px;
+
+}
+

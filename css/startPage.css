@@ -1,0 +1,91 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* background: #ff3772; */
+}
+
+/***********************/
+/* STYLE THE CONTAINER */
+/***********************/
+#container {
+    width: 670px;
+    height: 550px;
+    margin: 0 auto;
+    
+    border: 1px solid black;
+    background-image: url(../imgs/bg.jpg);
+    background-size: cover;
+}
+
+/**************************************/
+/* STYLE THE CONTENT OF THE CONTAINER */
+/**************************************/
+#submarine {
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    
+}
+
+#startPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#gameName {
+    width: 100%;
+    position: relative;
+    top: 120px;
+    left: 90px;
+    font-family: myFont;
+    color: rgb(7, 7, 163);
+    font-size: 2.5em;
+   
+    
+}
+h2  {
+    width: 100%;
+    position: relative;
+    top: 120px;
+    left: 150px;
+    font-family: myFont;
+    color: rgb(7, 7, 163);
+    font-size: 1.5em;
+}
+
+
+/* BUTTONS */
+.btn {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}

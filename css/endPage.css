@@ -1,0 +1,110 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/BreeSerif-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+/***********************/
+/* STYLE THE CONTAINER */
+/***********************/
+#container {
+    width: 670px;
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid black;
+    background-image: url(../imgs/bg.jpg);
+    background-size: cover; 
+}
+
+#endPage {
+    position: relative;
+    width: 450px;
+    margin: 60px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* FORMS */
+#scoreText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: myFont;
+    margin-bottom: 30px;
+}
+
+#finalScore {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:30px;
+  }
+  
+  input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+
+  
+
+  /* BUTTONS */
+.btn {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+  
